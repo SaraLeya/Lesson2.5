@@ -2,6 +2,7 @@
 
 
 /*Задание 2*/
+/*
 let EvenNumber =(n) => {
     if ( n % 2 == 0){
         alert(`Число четное`);
@@ -11,8 +12,9 @@ let EvenNumber =(n) => {
 }
 
 EvenNumber(4);
-
+*/
 /*Задание 1*/
+/*
 let bigest =(a,b) => {
     if ( a > b){
         alert(b);
@@ -22,3 +24,4 @@ let bigest =(a,b) => {
 }
 
 bigest(7, 2);
+*/

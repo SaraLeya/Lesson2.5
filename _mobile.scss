@@ -43,18 +43,14 @@
     .seasons {
         &__box {
             padding-bottom: 85px;
-            padding-left: none;
             display: flex;
             align-items: center;
             text-align: center;
         }
 
         &__left {
-            align-items: center;
+            text-align: center;
             padding-top: 51px;
-            padding-bottom: none;
-            display: grid;
-            gap: 32px;
         }
 
         &__right {
@@ -72,6 +68,10 @@
             line-height: 22px;
             width: 343px;
         }
+        &__button{
+            display: flex;
+    justify-content: space-around;
+        }
 
         &__pictire {
             width: 344px;
@@ -79,6 +79,6 @@
         }
     }
     .button{
-        align-items: center;
+        
     }
 }
