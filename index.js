@@ -1,8 +1,8 @@
 /*Задание 6*/
 
- let shit = () =>{
+let shit = () =>{
     let n = Number(prompt('Введите число'));
-    if (n === NaN || n === undefined) {
+    if (n === || isNaN(n) || n === undefined) {
         let n = n**3;
         alert(`n в кубе равняется ${f}`);
     } else {
@@ -17,7 +17,7 @@
 let red = (num3, num4) =>{
     num3 = Number(num3);
     num4 = Number(num4);
-if (num3 === NaN || num3 === undefined|| num4 === NaN || num4 === undefined){
+if (num3 === isNaN(num3) || num3 === undefined|| num4 === || num4 === isNaN(num4) || num4 === undefined){
     console.log('Одно или оба значения не являются числом');
 } else {
 let result = num3*num4;
@@ -28,53 +28,51 @@ console.log(result);
 red(2,3);
 
 /*Задание 4*/
-let age = (zero, twel) => {
+let age = () => {
     let userAnswer = prompt ('Сколько Вам лет?');
-if (userAnswer < 0) {
+if (userAnswer < 0 || isNaN(userAnswer)) {
     alert('Вы ввели неправильное значение');
-} else if (userAnswer <== 12) {
+} else if (userAnswer <= 12) {
     alert('Привет, друг!');
 } else {
     alert('Добро пожаловать!');
 }
 }
 
-age(0, 12);
+age();
 
 /*Задание 3*/
 /*Задание 3.1. */
-let squaring = (num1) => num1**2;
+let squaring = (num1) => сonsole.log(num1**2);
 
-console.log(squaring(2));
+squaring(2);
 
 /*3.2. */
-let squaring = (number1) => {
-    let result = number1**2;
-    return result;
+let squaring1 = (number1) => {
+    return number1**2;
 } 
 
-let q = squaring(number1);
-console.log(q);
+console.log(squaring1(4));
 
 /*Задание 2*/
 
-let EvenNumber =(n) => {
+let evenNumber =(n) => {
     if ( n % 2 == 0){
-        alert(`Число четное`);
+        return `Число четное`;
     } else{
-        alert(`Число нечетное`);
+        return `Число нечетное`;
     }
 }
 
-EvenNumber(4);
+console.log(evenNumber(4));
 
 /*Задание 1*/
 
 let bigest =(a,b) => {
     if ( a > b){
-        alert(b);
+        return b;
     } else{
-        alert(a);
+        return a;
     }
 }
 

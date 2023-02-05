@@ -177,6 +177,7 @@
   .gamebox__content_cart {
     width: 343px;
     height: 300px;
+    justify-content: center;
   }
   .seasons__box {
     padding-bottom: 85px;
