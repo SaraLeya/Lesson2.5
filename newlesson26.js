@@ -91,19 +91,24 @@ public static int[] reverse2(int[] array)
     return array;
 }
 
-/*10 совсем все плохо*/
+/*10*/
+
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
- 
   const gryd = [getRandomInt(0, 10)];
   
+function arithmeticMean (...gryd){
+    let am = 0;
 for (let item of gryd){
-console.log(?????item : gryd.length)
+am += item;
+return am;
 }
-    
-    gryd.length
+}
 
+console.log(am / gryd.length);
+  
+   
     /*11*/
 const pir = [
     [1, 2, 3,],
