@@ -2,14 +2,15 @@
 const h = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < h.length; i++) {
-    if (h[i] == 10) break;
+    if (h[i] == 11) break;
     console.log(h[i]);
 }
 
-/*2* не нашла ответ в уроке, но нашла в гугле/
+/*2*/
 const g = [1, 5, 4, 10, 0, 3];
 let gic = g.indexOf('4');
 console.log(gic);
+
 /*3*/
 const her = [1, 3, 5, 10, 20];
 
@@ -26,9 +27,15 @@ function getRandomInt(min, max) {
 
   const she = [];
 
-if (his[] % 2 == 0) {
-she.unshift(his[]);
+  function anEvenNumber (...he){
+for(let item of he){
+    h = item % 2;
+    if(h == 0){
+        she.unshift(item)
+    }
 }
+  }
+
 
 he.forEach(el, index) => {
     console.log(`${index} : ${el}`);
@@ -37,6 +44,7 @@ he.forEach(el, index) => {
 she.forEach(el, index) => {
     console.log(`${index} : ${el}`);
 }
+
 /*5*/
 const gif = [1, 1, 1];
 const gir = [gif, gif, gif];
@@ -45,13 +53,7 @@ const gir = [gif, gif, gif];
 
 const rid = [1, 1, 1];
 
-rid.push('2');
-console.log(rid);
-
-rid.push('2');
-console.log(rid);
-
-rid.push('2');
+rid.push('2', '2', '2');
 console.log(rid);
 
 /*7*/
@@ -68,7 +70,9 @@ const rud = [9, 8, 7, 6, 5];
 
 let e = prompt("Введите число от 1 до 10");
 
-if (rud[] == e) {
+let search = rud.includes(e);
+
+if (search == e) {
     console.log(true);
 } else {
     console.log(false);
@@ -108,7 +112,7 @@ const pir = [
 
 for (let pirIn of pir) {
     for (let element of pirIn) {
-        console/log(element);
+        console.log(element);
     }
 }
 
