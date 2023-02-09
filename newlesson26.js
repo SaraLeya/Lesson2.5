@@ -127,3 +127,16 @@ function getRandomInt(min, max) {
   }
  
   const great = [getRandomInt(0, 10)];
+  
+  for (let i = 0; i < great.length; i++){
+    let sum = 
+  }
+
+
+
+
+  for (let item of great) {
+    for (let element of pirIn) {
+        console.log(element);
+    }
+}
