@@ -2,7 +2,7 @@
 const h = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < h.length; i++) {
-    if (h[i] == 11) break;
+    if (h[i] == 10) break;
     console.log(h[i]);
 }
 
@@ -46,8 +46,16 @@ she.forEach(el, index) => {
 }
 
 /*5*/
-const gif = [1, 1, 1];
-const gir = [gif, gif, gif];
+const sara = [];
+for (let i = 0; i < 3; i++){
+    sara[i] = [];
+
+    for (let r = 0; r < 3; r++) {
+        sara[i].push(1);
+    }
+}
+
+console.log(sara);
 
 /*6*/
 
@@ -79,17 +87,13 @@ if (search == e) {
 }
 
 /*9*/
-const int = [a, b, c, d, e, f];
-public static int[] reverse2(int[] array)
-{
-    for (int i=0; i < array.length / 2; i++)
-    {   
-        int temp = array[i];
-        array[i] = array[array.length - i - 1];
-        array[array.length - i - 1] = temp;
-    }
-    return array;
-}
+const absdef = "absdef";
+const leya = absdef.split('');
+
+leya.reverse();
+
+console.log(leya.join(''));
+
 
 /*10*/
 
@@ -98,7 +102,7 @@ function getRandomInt(min, max) {
   }
   const gryd = [getRandomInt(0, 10)];
   
-function arithmeticMean (...gryd){
+function arithmeticMean (gryd){
     let am = 0;
 for (let item of gryd){
 am += item;
