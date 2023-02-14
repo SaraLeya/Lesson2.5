@@ -2,7 +2,7 @@
 const h = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < h.length; i++) {
-    if (h[i] == 10) break;
+    if (h[i] > 10) break;
     console.log(h[i]);
 }
 
@@ -125,7 +125,7 @@ for (let pirIn of pir) {
     }
 }
 
-/*12 еще хуже*/
+/*12*/
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
@@ -133,14 +133,7 @@ function getRandomInt(min, max) {
   const great = [getRandomInt(0, 10)];
   
   for (let i = 0; i < great.length; i++){
-    let sum = 
+   console.log(great[i]);
+   console.log(great[i+1]);
   }
 
-
-
-
-  for (let item of great) {
-    for (let element of pirIn) {
-        console.log(element);
-    }
-}
