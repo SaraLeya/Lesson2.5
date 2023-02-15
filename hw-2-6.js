@@ -22,21 +22,21 @@ console.log(her);
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
- 
-  const arr = [getRandomInt(0, 10)];
 
   const arrA = [];
   const arrB = [];
 
-for(let item of arr){
-    let h = arr[item] % 2;
+  for(let i = 0; i < 10; i++){
+    arrA.push(getRandomInt(0, 10));
+  }
+
+
+for(let item of arrA){
+    let h = item % 2;
     if(h == 0){
-        arrA[arrA.length] = h;
-    } else {
-        arrB[arrB.length] = h;
+        arrB.push(item);
     }
 }
-
 
 arrA.forEach(el, index) => {
     console.log(`${index} : ${el}`);
@@ -101,40 +101,40 @@ console.log(leya.join(''));
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
-  const gryd = [getRandomInt(0, 10)];
- 
-console.log(am / gryd.length);
-  
-const getAverage = (gryd) => {
-    const sum = gryd.reduce((acc, gryd) => acc + gryd, 0);
-    const length = gryd.length;
-    return sum / length;
-  };
-  
-  const gryd = [1, 2, 3, 4];
-  console.log(getAverage(gryd));
-   
+
+  const arrS = [];
+
+for(let i = 0; i < 6; i++){
+    arrS.push(getRandomInt(0, 10));
+  }
+ let sum = 0;
+
+  for(let item of arrS){
+   sum += item;
+  }
+
+  console.log(sum / arrS.length);
+
     /*11 flat*/
 const pir = [
     [1, 2, 3,],
     [4, 5, 6]
 ];
 
-for (let pirIn of pir) {
-    for (let element of pirIn) {
-        console.log(element);
-    }
-}
+console.log(pir.flat());
 
 /*12*/
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
  
-  const great = [getRandomInt(0, 10)];
+  const great = [];
   
-  for (let i = 0; i < great.length; i++){
-   console.log(great[i]);
-   console.log(great[i+1]);
+  for (let i = 0; i < 10; i++){
+    great.push(getRandomInt(0, 10));
   }
 
+
+for(i = 0; i < great.length - 1; i++){
+console.log(great[i] + great[i++]);
+}
