@@ -2,8 +2,8 @@
 const h = [1, 5, 4, 10, 0, 3];
 
 for (let i = 0; i < h.length; i++) {
-    if (h[i] > 10) break;
     console.log(h[i]);
+    if (h[i] === 10) break;
 }
 
 /*2*/
@@ -23,25 +23,26 @@ function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
  
-  const he = [getRandomInt(0, 10)];
+  const arr = [getRandomInt(0, 10)];
 
-  const she = [];
+  const arrA = [];
+  const arrB = [];
 
-  function anEvenNumber (...he){
-for(let item of he){
-    h = item % 2;
+for(let item of arr){
+    let h = arr[item] % 2;
     if(h == 0){
-        she.unshift(item)
+        arrA[arrA.length] = h;
+    } else {
+        arrB[arrB.length] = h;
     }
 }
-  }
 
 
-he.forEach(el, index) => {
+arrA.forEach(el, index) => {
     console.log(`${index} : ${el}`);
 }
 
-she.forEach(el, index) => {
+arrB.forEach(el, index) => {
     console.log(`${index} : ${el}`);
 }
 
@@ -67,7 +68,7 @@ console.log(rid);
 /*7*/
 const pig = [9, 8, 7, 'a', 6, 5];
 
-pig = pig.soft();
+pig = pig.sort();
 
 console.log(pig.shift());
 
@@ -95,25 +96,25 @@ leya.reverse();
 console.log(leya.join(''));
 
 
-/*10*/
+/*10 не поняла, как с циклом for, но поняла с функцией как*/
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
   }
   const gryd = [getRandomInt(0, 10)];
-  
-function arithmeticMean (gryd){
-    let am = 0;
-for (let item of gryd){
-am += item;
-return am;
-}
-}
-
+ 
 console.log(am / gryd.length);
   
+const getAverage = (gryd) => {
+    const sum = gryd.reduce((acc, gryd) => acc + gryd, 0);
+    const length = gryd.length;
+    return sum / length;
+  };
+  
+  const gryd = [1, 2, 3, 4];
+  console.log(getAverage(gryd));
    
-    /*11*/
+    /*11 flat*/
 const pir = [
     [1, 2, 3,],
     [4, 5, 6]
