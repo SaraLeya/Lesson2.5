@@ -58,6 +58,21 @@ let dayAfter73 = new Date(searchDate);
 
 console.log(dayAfter73);
 
+/*10*/
+
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+
+const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
+
+let myDate = new Date(); 
+
+myDate.setDate(15); 
+myDate.setMonth(1); 
+myDate.setYear(2023); 
+let fullDate = myDate.getDate() + " " + months[myDate.getMonth()] + " " + myDate.getFullYear() + " - это " + days[myDate.getDay()];
+
+console.log(fullDate); 
+
 /*6*/
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
