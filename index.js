@@ -25,6 +25,11 @@ function game1 (){
         default: alert('Нет такого');
     }
     }
-const fruts = [];
 
-    function game2 ()
+const fruts = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+
+    function game2 (){
+        fruts = fruts.sort(() => Math.random() - 0.5);
+        alert(fruts);
+
+    }

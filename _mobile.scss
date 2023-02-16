@@ -82,4 +82,45 @@
     .button{
         
     }
+.words {
+        &__box {
+            padding-bottom: 85px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+
+        &__left {
+            text-align: center;
+            padding-top: 51px;
+        }
+
+        &__right {
+        }
+
+        &__title {
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__text {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 22px;
+            width: 343px;
+        }
+        &__button{
+            display: flex;
+    justify-content: space-around;
+        }
+
+        &__pictire {
+            width: 344px;
+            height: 236px;
+        }
+    }
+    .button{
+        
+    }
 }
