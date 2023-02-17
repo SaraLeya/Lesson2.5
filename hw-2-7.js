@@ -33,7 +33,7 @@ console.log(Math.min.apply(null, arr));
 
 /*5*/
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min)) + min;
+    return Math.floor(Math.random() * (max - min + 1)) + min;
   }
 
 function trh () {
@@ -81,7 +81,7 @@ function getRandomInt(min, max) {
   st = Math.round(prompt('num'));
   const mas = [];
   function flag (st) {
-for(i = 0; i < Math.round(st / 2); i++){
+for(i = 0; i < Math.floor(st / 2); i++){
     mas.push(getRandomInt(0, st));
 }
 }
@@ -91,6 +91,7 @@ flag(st);
 console.log(mas);
 
 /*7 не вышло*/
+
 const mas2 = [];
 let d = prompt('num1');
     let u = prompt('num2');
