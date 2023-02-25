@@ -26,10 +26,16 @@ function game1 (){
     }
     }
 
-const fruts = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
+let fruts = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
     function game2 (){
         fruts = fruts.sort(() => Math.random() - 0.5);
-        alert(fruts);
-
+        alert(fruts.join(', '));
+let userInput1 = prompt('Чему равнялся первый элемент массива?');
+let userInput2 = prompt('Чему равнялся последний элемент массива?');
+if (fruts[0].toLowerCase() === userInput1.toLowerCase() && fruts[fruts.length - 1].toLowerCase() === userInput2.toLowerCase()) {
+    alert("Все верно. У вас хорошая память!")
+    } else {
+    alert("Вы не угадали! Попробуйте еще раз.");
+    }
     }
