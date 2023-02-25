@@ -49,18 +49,20 @@ console.log(curDate);
 
 /*9*/
 let currectDate = new Date();
-console.log(+currectDate);
-let day73 = 73 * 24 * 60 * 60 * 1000;
 
-let searchDate = currectDate + day73;
+currectDate.setDate(currectDate.getDate() + 73);
 
-let dayAfter73 = new Date(searchDate);
-
-console.log(dayAfter73);
+console.log(currectDate)
 
 /*10*/
-
-const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+function formatDate(date) {
+    const locale = 'ru-RU'
+    return `Дата: ${date.toLocaleString(locale, {day: 'numeric', month: 'long', year: 'numeric'})} - это ${date.toLocaleString(locale, {weekday: 'long'})}.
+ Время: ${date.toLocaleTimeString(locale)}`
+ }
+ console.log(formatDate(new Date()));
+ 
+/*const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 
 const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
@@ -90,17 +92,11 @@ flag(st);
 
 console.log(mas);
 
-/*7 не вышло*/
+/*7*/
 
-const mas2 = [];
-let d = prompt('num1');
-    let u = prompt('num2');
-function lll (d, u){
-    Math.round(d);
-    Math.round(u);
-    mas2.push(Math.round(Math.random (d, u)));
+function getRandomNum(a, b) {
+    let randNum = Math.round(Math.random() * (b - a)) + a;
+    return randNum;
 }
 
-lll();
-
-console.log(mas2);
+console.log(getRandomNum(1, 5));
