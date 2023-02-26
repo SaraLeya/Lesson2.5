@@ -1,79 +1,74 @@
 /*1 не работает*/
-/* const arr = [2, 5, 10, 200, 50, 30, 5];
+const arr = [2, 5, 10, 200, 50, 30, 5];
 
-const result (arra, callback) => {
-    Math.round(callback());
-    console.log(Math.round(callback));
+const result = (arra, callback) => {
+    return Math.round(callback(arr));
 }
 
-let sum () =>{
-    massiv.arr(i=>x+=i, x=0).reverse()[0];
-}
+const sum = () =>
+    arr.reduce((product, element) => product + element);
 
-let mult () => {
-    arr.reduce((a,b)=>a*b);
-}
+let mult = () =>
+    arr.reduce((product, element) => product * element);
 
-getResult(arr, sum);
-getResult(arr, mult);
+
+console.log(result(arr, sum));
+console.log(result(arr, mult));
 
 /*2*/
 const users = [
-	{name: 'Jon', age: 22},
-	{name: 'Richard', age: 18},
-	{name: 'Anton', age: 32},
-	{name: 'Lida', age: 23},
-	{name: 'Bob', age: 44}
+    { name: 'Jon', age: 22 },
+    { name: 'Richard', age: 18 },
+    { name: 'Anton', age: 32 },
+    { name: 'Lida', age: 23 },
+    { name: 'Bob', age: 44 }
 ];
 
-users.sort((a,b) => a.age - b.age);
+users.sort((a, b) => a.age - b.age);
 
 console.log(users);
 
-/*3 да что не так???*/
-/*const arr = [3, 4, 5, 5, 6, 'two', 74];
+/*3 попытка номер 2 провалилась*/
+const arr2 = [3, 4, 5, 5, 6, 'two', 74];
 
-let each(arra, callback) => {
-callback(arra);
-}
+const each = (arr2, callback) => callback(arr2);
 
-const reversArr(arr) => {
-    arr.reverse();
-}
+const reversArr = () => arr2.reverse();
 
-const toNumberArr (arr) => {
-    for(i=0; i < length.arr; i++){
-        if(isNaN(+i)){
-            delete arr[i];
+const toNumberArr = () => {
+    for (i = 0; i < length.arr2; i++) {
+        if (isNaN(+i)) {
+            delete arr2[i];
         }
     }
 }
 
-console.log(each(arr, reversArr));
-console.log(each(arr, toNumberArr));
+console.log(each(arr2, reversArr));
+console.log(each(arr2, toNumberArr));
 
-/*4 а вот тут получилось*/
-const timer = (deadline) => {
-
-    let time = deadline;
+/*4*/
+function date() {
     const interval = setInterval(() => {
-        time -= 3;
-        console.log(new Date());
+      console.log(new Date());
     }, 3000);
-
     setTimeout(() => {
-        clearInterval(interval);
-        console.log('30 секунд прошло')
-    }, deadline * 1000)
-};
+      clearInterval(interval);
+      console.log("30 секунд прошло");
+    }, 30000);
+  }
+  
+  date();
 
-
-timer(30000);
 
 /*5*/
+
 function calling() {
     console.log('Звоню!')
 };
+
+function talk() {
+    console.log('Разговор');
+}
 
 function beeps() {
     setTimeout(() => {
@@ -81,12 +76,6 @@ function beeps() {
     }, 1000);
 }
 
-function talk() {
-    setTimeout(() => {
-    console.log('Разговор')
-}, 2000);
-}
 
 calling();
-beeps();
-talk();
+beeps(talk);
