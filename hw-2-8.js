@@ -1,4 +1,4 @@
-/*1 не работает*/
+/*1*/
 const arr = [2, 5, 10, 200, 50, 30, 5];
 
 const result = (arra, callback) => {
@@ -66,14 +66,14 @@ function calling() {
     console.log('Звоню!')
 };
 
-function talk() {
-    console.log('Разговор');
-}
 
 function beeps() {
     setTimeout(() => {
         console.log('Идут гудки...')
     }, 1000);
+    function talk() {
+        console.log('Разговор');
+    }
 }
 
 
