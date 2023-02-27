@@ -62,17 +62,20 @@ function date() {
 
 /*5*/
 
-function beeps() {
+function calling() {
+    console.log('Звоню!');
+};
+
+function beeps(callback) {
     setTimeout(() => {
         console.log('Идут гудки...')
     }, 1000);
+    setTimeout(callback, 2000);
 }
 
-
-function call (callback) {
-    console.log('Звоню!');
-    callback();
-    console.log('Разговор');
+function talk() {
+    console.log('Разговор')
 }
 
-call(beeps);
+calling();
+beeps(talk);
