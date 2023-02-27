@@ -36,7 +36,7 @@ sum += arr[i]**2;
 
 console.log(my (arr)); 
 
-/*3*/
+/*3 hhhh*/
 let n = 111;
 function sgre (n){
    let b = Math.sqrt(n);
