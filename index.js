@@ -1,4 +1,4 @@
-/*1*/
+/*1 yes*/
 let a = 'Hello';
 let b = 'l';
 
@@ -15,7 +15,7 @@ function get(a, b) {
 }
 get(a, b);
 
-/*2*/
+/*2 no*/
 const arr = [1, 3, 4, 5, 6];
 
 let result = arr.reduce(function(sum, current) {
@@ -36,7 +36,7 @@ sum += arr[i]**2;
 
 console.log(my (arr)); 
 
-/*3 hhhh*/
+/*3 yes*/
 let n = 111;
 function sgre (n){
    let b = Math.sqrt(n);
@@ -50,7 +50,7 @@ return n;
 }
 console.log(sgre (n));
 
-/*4*/
+/*4 no*/
 const absdef = "absdef";
 const leya = absdef.split('');
 
@@ -88,7 +88,7 @@ console.log(d);
 
 magic(d);
 
-/*6*/
+/*6 no*/
 let prise = 1;
 let mango = 7;
 
@@ -100,7 +100,12 @@ function mangoFree (prise, mango) {
 
 mangoFree (prise, mango);
 
-/*7*/
+/*7 */
+/*function litres(time) {
+let  hydrated = Math.floor(time * 0.5);
+  return hydrated;
+} */
+/*no
 let time = 6;
 
 function natan (time){
@@ -110,7 +115,12 @@ function natan (time){
 
 natan (time);
 
-/*8*/
+/*8 yes*/
+/*function invert(array) {
+    return array.map(x => x * -1);;
+   }
+
+/*no
 const arr1 = [1, -4, 9, -16];
 const arr2 = arr1.map(x => x * -1);
 
@@ -131,7 +141,7 @@ console.log(arr4);
 }
 
 answer (arr4, nn);
-/*10*/
+/*10 no*/
 const array = [5, 1, 2, 6, 4];
 const res = array.reduce((acc, rec) => acc * rec);
 
